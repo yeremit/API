@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedorHeader{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #af7aff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.contenedorTodo{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: blueviolet;
+    border-radius: 30px;
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cards{
+    width: 200px;
+    background-color: rgb(17, 44, 165);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.foto{
+    width:150px ;
+    border-radius: 150px;
+}
+
+.txtSmall{
+    font-weight: 500;
+    color: white;
+}
+
+.txtP{
+    font-weight: 300;
+    color: white;
+}
