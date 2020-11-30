@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/nba.css">
+    <title>NBA</title>
+</head>
+<body>
+
+    <div class="nav">
+
+        <input class="form-control" id="valor" type="text" placeholder="Search..">
+        <button type="button" class="btn btn-outline-primary" id="Buscar">Buscar</button>
+
+    </div>
+
+    <div class="foto">
+
+        <img id="foto" src="">
+
+    </div>
+    
+    <div class="jugador">
+
+        <p id="nombre" class="players"></p>
+        <p id="nom" class="players"></p>
+        <p id="pos" class="players"></p>
+        <p id="altura" class="players"></p>
+        <p id="alturap" class="players"></p>
+        <p id="peso" class="players"></p>
+
+    </div>
+
+    <div class="team">
+
+        <p id="abre" class="equi"></p>
+        <p id="cuidad" class="equi"></p>
+        <p id="con" class="equi"></p>
+        <p id="div" class="equi"></p>
+        <p id="nombreteam" class="equi"></p>
+        <p id="nombrete" class="equi"></p>
+
+    </div>
+
+    <script src="../assets/js/nba.js"></script>
+
+</body>
+</html>
