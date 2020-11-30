@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/estilos_promesas.css">
+    <title>Promesas</title>
+</head>
+<body>
+<!-- <div class="container">
+    <nav class="navbar navbar-expand-sm">
+        enlaces
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Pokemones.html">Poke Api</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Promesas.html">Rick Api</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Lista.html">Lista Api</a>
+            </li>
+        </ul>
+    </nav>
+</div> -->
+<div class="contenedorHeader">
+    <div>
+    <a href="#" style="display: flex" class="btn" id="anterior"><span class="material-icons">west</span>Anterior</a>
+    </div>
+    <div>
+        <a href="#" style="display: flex" class="btn" id="Siguiente">Siguiente<span class="material-icons">east</span></a>
+    </div>
+</div>
+<div class="contenedorTodo" id="contenedorTodo"></div>
+
+
+<script src="../assets/js/readApi.js"></script>
+</body>
+</html>
