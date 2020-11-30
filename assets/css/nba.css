@@ -1,0 +1,67 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica Neue;
+}
+
+.nav{
+    position: absolute;
+    margin-left: 19%;
+    width: 744px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.foto{
+    position: absolute;
+    margin-left: 49%;
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.jugador{
+    position: absolute;
+    margin-left: 19%;
+    width: 400px;
+    height: 637px;
+    margin-top: 80px;
+}
+
+.team{
+    position: absolute;
+    margin-left: 49%;
+    width: 300px;
+    height: 300px;
+    margin-top: 417px;
+}
+
+img{
+    width: 100.3%;
+    height: 100.4%;
+    padding: none;
+    margin: auto;
+}
+#nombre{
+    margin-top: 30px;
+}
+.players{
+
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.equi{
+
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.form-control{
+
+    width: 89.7%;
+    height: 48px;
+
+}
