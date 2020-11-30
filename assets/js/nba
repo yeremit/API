@@ -1,0 +1,92 @@
+const url = "https://www.balldontlie.io/api/v1/players";
+let html;
+const getData = (api) => {
+
+    return fetch(api)
+        .then((response) => response.json())
+        .then((json) => {
+                imprimirDatos(json)
+                console.log(json)
+        })
+        .catch((error) => {
+            console.log("Error: ",error)
+        })
+
+}
+async function TraerJugador(ID)
+{
+    try {
+        let response = await
+            fetch(ID);
+        let data = await response.json()
+        return imprimirDatosespecificos(data);
+    }catch (e){
+        alert('No se ha encontrado el jugador');
+    }
+
+}
+const imagen = document.getElementById('foto');
+
+const imprimirDatosespecificos = (data) => {
+
+    let foto = data.id;
+
+    if (foto == 237) {
+        
+        imagen.src = '../assets/pictures/lebron.jfif';
+
+    }else if (foto == 3000) {
+
+        imagen.src = '../assets/pictures/Randy-White.jpg';
+        
+    }else if (foto == 3092) {
+
+        imagen.src = '../assets/pictures/haywood.jfif';
+        
+    }else if (foto == 777) {
+
+        imagen.src = '../assets/pictures/stan.jfif';
+        
+    }else{
+
+        imagen.src = '../assets/pictures/404.jpg';
+
+    }
+
+    let nombre = document.getElementById('nombre')
+    nombre.innerHTML = `<p><b>Nombre:</b> ${data.first_name}</p>`;
+    let nom = document.getElementById('nom')
+    nom.innerHTML = `<p><b>Segundo nombre:</b> ${data.last_name}</p>`;
+    let pos = document.getElementById('pos')
+    pos.innerHTML = `<p><b>posicion:</b> ${data.position}</p>`;
+    let altura = document.getElementById('altura')
+    altura.innerHTML = `<p><b>Altura:</b> ${data.height_feet} pies</p>`;
+    let alturap = document.getElementById('alturap')
+    alturap.innerHTML = `<p><b>Altura:</b> ${data.height_inches} pulgadas</p>`;
+    let peso = document.getElementById('peso')
+    peso.innerHTML = `<p><b>Peso:</b> ${data.weight_pounds} kg</p>`;
+
+    let abre = document.getElementById('abre')
+    abre.innerHTML = `<p><b>Abreviatura:</b> ${data.team.abbreviation} </p>`;
+    let cuidad = document.getElementById('cuidad')
+    cuidad.innerHTML = `<p><b>Ciudad:</b> ${data.team.city} </p>`;
+    let con = document.getElementById('con')
+    con.innerHTML = `<p><b>Conferencia:</b> ${data.team.conference} </p>`;
+    let div = document.getElementById('div')
+    div.innerHTML = `<p><b>Division:</b> ${data.team.division} </p>`;
+    let nombreteam = document.getElementById('nombreteam')
+    nombreteam.innerHTML = `<p><b>Nombre completo:</b> ${data.team.full_name} </p>`;
+    let nombrete = document.getElementById('nombrete')
+    nombrete.innerHTML = `<p><b>Nombre:</b> ${data.team.name} </p>`;
+
+    console.log(data)
+}
+let Buscar = document.getElementById('Buscar');
+Buscar.addEventListener('click', () =>{
+    let Valor = document.getElementById('valor').value;
+    let Busqueda = "https://www.balldontlie.io/api/v1/players/" + Valor + "";
+    TraerJugador(Busqueda);
+
+});
+
+getData(url);
